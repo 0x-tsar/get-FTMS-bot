@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const PORT = 5005;
@@ -33,7 +34,7 @@ setInterval(async () => {
 }, 1100 * 60 * 13);
 
 app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
+  console.log(`Listening at http://localhost:${PORT}`);
 });
 
 // https://kovan.chain.link/
