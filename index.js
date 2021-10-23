@@ -18,8 +18,8 @@ const run = async () => {
   await page.type("input", my_address);
   await page.waitForTimeout(1000);
   await page.click('button[class="App-request-btn"]');
-  // await page.waitForTimeout(8000);
-  await page.waitForNavigation();
+  await page.waitForTimeout(5000);
+  // await page.waitForNavigation();
   // await page.waitForNavigation();
   // await page.waitForTimeout(1000 * 600);
 
