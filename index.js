@@ -13,13 +13,11 @@ const run = async () => {
   await page.setViewport({ width: 1000, height: 1700 });
   await page.goto("https://faucet.fantom.network/");
 
-  // await page.waitForNavigation();
   await page.waitForTimeout(5000);
   await page.type("input", my_address);
   await page.waitForTimeout(1000);
   await page.click('button[class="App-request-btn"]');
   await page.waitForTimeout(5000);
-  // await page.waitForNavigation();
   // await page.waitForNavigation();
   // await page.waitForTimeout(1000 * 600);
 
