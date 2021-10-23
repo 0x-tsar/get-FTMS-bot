@@ -4,7 +4,7 @@ const PORT = 5005;
 
 const puppeteer = require("puppeteer");
 
-const my_address = "0x6599cA2767Fa78bE271ef85557E755C6687Ee3Ca";
+const my_address = "YOUR PUBLIC KEY HERE";
 
 // run the bot first then run it each 10 minutes
 const run = async () => {
