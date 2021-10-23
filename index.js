@@ -26,10 +26,6 @@ const run = async () => {
   await browser.close();
 };
 
-app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
-});
-
 run();
 
 setInterval(() => {
@@ -37,6 +33,10 @@ setInterval(() => {
     run();
   })();
 }, 1100 * 60 * 13);
+
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
+});
 
 // https://kovan.chain.link/
 // https://ropsten.chain.link/
